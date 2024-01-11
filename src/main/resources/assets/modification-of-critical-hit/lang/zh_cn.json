@@ -1,0 +1,6 @@
+{
+  "enchantment.modification-of-critical-hit.critchance": "概率暴击",
+  "enchantment.modification-of-critical-hit.critchance.desc":"增加暴击概率",
+  "enchantment.modification-of-critical-hit.criteffect": "暴击效果",
+  "enchantment.modification-of-critical-hit.criteffect.desc": "增加暴击造成的伤害"
+}

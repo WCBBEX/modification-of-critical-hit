@@ -1,0 +1,36 @@
+{
+	"schemaVersion": 1,
+	"id": "modification-of-critical-hit",
+	"version": "1.3",
+	"name": "Modification Of Critical Hit",
+	"description": "Modified from the original version, the critical hit mechanism now functions similar to that of other games. You can enhance your combat prowess through two enchantments related to critical hit probability and critical hit effects.",
+
+	"authors": [
+		"WCBBEX"
+	],
+	"contact": {
+		"email": "354127216@qq.com",
+		"homepage": "https://modrinth.com/mod/modification-of-critical-hit"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/modification-of-critical-hit/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+          "com.modificationofcrit.Main"
+		]
+	},
+	"mixins": [
+		"modification-of-critical-hit.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.11.0",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+
+}

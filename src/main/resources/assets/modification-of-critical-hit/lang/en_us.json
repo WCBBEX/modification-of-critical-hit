@@ -1,0 +1,6 @@
+{
+  "enchantment.modification-of-critical-hit.critchance": "Probability Critical Hit",
+  "enchantment.modification-of-critical-hit.critchance.desc": "Increase Critical Hit Chance",
+  "enchantment.modification-of-critical-hit.criteffect": "Critical Effect",
+  "enchantment.modification-of-critical-hit.criteffect.desc": "Increase Damage from Critical Hits"
+}
