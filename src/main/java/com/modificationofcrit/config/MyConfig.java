@@ -29,16 +29,19 @@ public class MyConfig {
 
 
     private String provider( String filename ) {
-        return "crit_chance.rarity=1  #The larger the number, the rarer it is.There are a total of four levels.(1-4)\n" +
-                "crit_chance.max_level=5\n" +
-                "crit_chance.increase_per_level=0.2  #The initial critical hit chance will be 0.\n" +
-                "crit_chance.enable=true\n"+
-                "\n" +
-                "crit_effect.rarity=3\n" +
-                "crit_effect.max_level=3\n" +
-                "crit_effect.initial_effect=1.5\n" +
-                "crit_effect.increase_per_level=0.5\n" +
-                "crit_effect.enable=true"
+        return """
+                crit_chance.rarity=1
+                #The larger the number, the rarer it is.There are a total of four levels.(1-4)
+                crit_chance.max_level=5
+                crit_chance.increase_per_level=0.2
+                #The initial critical hit chance will be 0.
+                crit_chance.enable=true
+
+                crit_effect.rarity=3
+                crit_effect.max_level=3
+                crit_effect.initial_effect=1.5
+                crit_effect.increase_per_level=0.5
+                crit_effect.enable=true"""
                 ;
     }
 

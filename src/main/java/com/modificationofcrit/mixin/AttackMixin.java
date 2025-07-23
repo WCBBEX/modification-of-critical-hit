@@ -28,18 +28,16 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 import java.util.List;
-import java.util.Random;
 
-import static com.modificationofcrit.Main.*;
+import static com.modificationofcrit.Main.CRITEFFECT_ENCHANTMENT;
+import static com.modificationofcrit.Main.CRITRATE_ENCHANTMENT;
 
-//移除下落暴击的机制
 @Mixin(PlayerEntity.class)
 public abstract class AttackMixin {
 	public PlayerEntity originalInstance = (PlayerEntity) (Object) this;
 	@Shadow
 	public void attack(Entity target){}
 
-	//判断是否暴击的方法
 	private boolean isCrit(ItemStack itemstack, PlayerEntity player,float h){
 		int rateLevel = EnchantmentHelper.getLevel(CRITRATE_ENCHANTMENT, itemstack);
 

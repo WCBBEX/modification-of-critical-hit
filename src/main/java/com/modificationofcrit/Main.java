@@ -12,14 +12,12 @@ import net.minecraft.util.Identifier;
 public class Main implements ModInitializer {
 	public static final String MOD_ID = "modification-of-critical-hit";
 	MyConfig ConfigStart = new MyConfig();
-	public static CritRateEnchantment CRITRATE_ENCHANTMENT = new CritRateEnchantment(); //暴击率附魔
-	public static CritEffectEnchantment CRITEFFECT_ENCHANTMENT = new CritEffectEnchantment();//暴击效果附魔
-
+	public static CritRateEnchantment CRITRATE_ENCHANTMENT = new CritRateEnchantment();
+	public static CritEffectEnchantment CRITEFFECT_ENCHANTMENT = new CritEffectEnchantment();
 
 
 	@Override
 	public void onInitialize() {
-		//根据config文件中的设置来注册附魔
 		if(MyConfig.RATE_ENABLE) {
 			Registry.register(Registries.ENCHANTMENT, new Identifier(MOD_ID, "critchance"), CRITRATE_ENCHANTMENT);
 		}

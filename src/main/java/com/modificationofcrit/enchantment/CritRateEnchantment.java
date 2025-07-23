@@ -29,11 +29,6 @@ public class CritRateEnchantment extends Enchantment {
     }
 
     @Override
-    public int getMinPower(int level) {
-        return 1 + 10 * (level - 1);
-    }
-
-    @Override
     public int getMaxPower(int level) {
         return super.getMinPower(level) + 50;
     }
@@ -42,6 +37,10 @@ public class CritRateEnchantment extends Enchantment {
     public boolean isAcceptableItem(ItemStack stack) {
         boolean isAccept = EnchantmentTarget.WEAPON.isAcceptableItem(stack.getItem()) || EnchantmentTarget.TRIDENT.isAcceptableItem(stack.getItem()) || (stack.getItem() instanceof AxeItem);
         return isAccept;
+    }
+
+    public int getMinPower(int level) {
+        return 1 + 10 * (level - 1);
     }
 
     @Override
