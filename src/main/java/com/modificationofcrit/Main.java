@@ -4,7 +4,6 @@ import com.modificationofcrit.config.MyConfig;
 import com.modificationofcrit.enchantment.CritEffectEnchantment;
 import com.modificationofcrit.enchantment.CritRateEnchantment;
 import net.fabricmc.api.ModInitializer;
-
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
