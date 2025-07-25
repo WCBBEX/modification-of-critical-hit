@@ -18,10 +18,10 @@ public class Main implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		if(MyConfig.RATE_ENABLE) {
-			Registry.register(Registries.ENCHANTMENT, new Identifier(MOD_ID, "critchance"), CRITRATE_ENCHANTMENT);
+			Registry.register(Registries.ENCHANTMENT, new Identifier(MOD_ID, "crit_chance"), CRITRATE_ENCHANTMENT);
 		}
 		if(MyConfig.EFFECT_ENABLE) {
-			Registry.register(Registries.ENCHANTMENT, new Identifier(MOD_ID, "criteffect"), CRITEFFECT_ENCHANTMENT);
+			Registry.register(Registries.ENCHANTMENT, new Identifier(MOD_ID, "crit_effect"), CRITEFFECT_ENCHANTMENT);
 		}
 	}
 
