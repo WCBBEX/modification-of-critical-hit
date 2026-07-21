@@ -3,7 +3,8 @@
 	"package": "com.modificationofcrit.mixin",
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
-		"AttackMixin"
+		"AttackMixin",
+		"PlayerAttributeMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
